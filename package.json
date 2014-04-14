@@ -1,0 +1,26 @@
+{
+  "name": "circularjs",
+  "version": "0.1.0",
+  "description": "Traverse circular javascript object graphs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aaaristo/circularjs.git"
+  },
+  "keywords": [
+    "json",
+    "graph",
+    "traversal"
+  ],
+  "author": "aaaristo",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/aaaristo/circularjs/issues"
+  },
+  "dependencies": {
+    "underscore": "~1.6.0"
+  }
+}
