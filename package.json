@@ -1,7 +1,7 @@
 {
   "name": "circularjs",
   "version": "0.1.0",
-  "description": "Traverse circular javascript object graphs",
+  "description": "Traverse circular javascript object graphs, in a non-recursive way",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,7 +13,8 @@
   "keywords": [
     "json",
     "graph",
-    "traversal"
+    "traversal",
+    "non-recursive"
   ],
   "author": "aaaristo",
   "license": "Apache2",
