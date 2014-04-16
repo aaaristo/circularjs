@@ -19,3 +19,8 @@ e.dad= a;
 
 traverse(a,console.log);
 ```
+
+## Linked projects
+
+* [circularclone](https://github.com/aaaristo/circularclone): deep clone circular graphs
+* [GSON](https://github.com/aaaristo/GSON): serialize circular graphs
