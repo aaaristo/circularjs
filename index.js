@@ -3,7 +3,7 @@ var _= require('underscore');
 var nt= {'Array':true,'Object':true},
     isNode= function (val)
     {
-       return (typeof val=='object')&&nt[val.constructor.name];
+       return (typeof val=='object')&&!!nt[val.constructor.name];
     };
 
 module.exports= function traverse(orig,cb,skipDelete)
