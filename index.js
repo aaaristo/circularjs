@@ -1,5 +1,11 @@
 var _= require('underscore');
 
+var nt= {'Array':true,'Object':true},
+    isNode= function (val)
+    {
+       return (typeof val=='object')&&nt[val.constructor.name];
+    };
+
 module.exports= function traverse(orig,cb,skipDelete)
 {
     var stack= [orig],
@@ -21,7 +27,7 @@ module.exports= function traverse(orig,cb,skipDelete)
     {
        var current= stack.pop();
 
-       if (current&&typeof current=='object')
+       if (current&&isNode(current))
        {
            if (wasVisited(current)) continue;
      
@@ -48,3 +54,5 @@ module.exports= function traverse(orig,cb,skipDelete)
         delete node.__visited;
     });
 };
+
+module.exports.isNode= isNode;
