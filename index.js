@@ -33,13 +33,13 @@ module.exports= function traverse(orig,cb,skipDelete)
      
            if (_.isArray(current))
            {
-             cb(current);
+             if (cb(current)) continue;
              _(current).forEach(push);
            }
            else
            {
              var keys= _.without(_.keys(current),'__visited');
-             cb(current,keys);
+             if (cb(current,keys)) continue;
              _(keys).forEach(function (key)
              {
                 push(current[key]);

@@ -1,6 +1,6 @@
 {
   "name": "circularjs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Traverse circular javascript object graphs, in a non-recursive way",
   "main": "index.js",
   "scripts": {
