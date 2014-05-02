@@ -25,3 +25,4 @@ traverse(a,console.log);
 * [circularclone](https://github.com/aaaristo/circularclone): deep clone circular graphs
 * [GSON](https://github.com/aaaristo/GSON): serialize circular graphs
 * [circular-region](https://github.com/aaaristo/circular-region): Attach and detach javascript object from object graphs
+* [circular-path](https://github.com/aaaristo/circular-path): Navigates non-recursively into a circular javascript object graph giving back occurrences of a given path
